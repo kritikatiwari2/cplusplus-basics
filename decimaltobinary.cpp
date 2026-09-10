@@ -4,15 +4,20 @@
  int main()
  {
     int n,remainder;
-    int binary=0;
+    int binary[32];
     int i=0;
     cin>>n;
    while(n>0){
     remainder=n%2;
-cout<<remainder;
-n=n/2;
-binary=binary+remainder*pow(10,i++);
+    binary[i]=remainder;
+   
+    n=n/2;
+     i++;
+   } cout<<"Binary=";
+   for(int j=i-1;j>=0;j--)
+   {
+    cout<<binary[j];  
    }
-cout<<binary;
+   return 0;
 }
  
