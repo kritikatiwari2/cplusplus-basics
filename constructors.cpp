@@ -5,6 +5,8 @@ class Students {
         int roll;
         float marks;
     public:
+   
+   // default constructor
     Students(){
         
         cout<<"enter the name ,roll and marks of the student:"<<endl;
@@ -15,6 +17,7 @@ class Students {
             cout<<"Roll: "<<roll<<endl;
             cout<<"Marks: "<<marks<<endl;
         }
+        //parameterized constructor
 };
 int main(){
     Students s;
